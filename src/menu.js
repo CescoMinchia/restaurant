@@ -1,20 +1,21 @@
 import "./style.css";
 import piazzaGalimbertiImg from "./piazza galimberti.jpeg";
+import { renderPage } from "./helper.js";
 
-function homeImg() {
+function menuImg() {
   const heroImg = document.createElement("img");
   heroImg.src = piazzaGalimbertiImg;
 
   return heroImg;
 }
 
-function homeHeadline() {
+function menuHeadline() {
   const headline = document.createElement("h1");
-  headline.textContent = "Beautiful Restaurant in Cuneo";
+  headline.textContent = "Menu";
   return headline;
 }
 
-function homeText() {
+function menuText() {
   const text = document.createElement("p");
   text.textContent = `
   This new restaurant has a lot of bagna cauda
@@ -22,13 +23,8 @@ function homeText() {
   return text;
 }
 
-function createHomepage() {
-  // lay out all the components
-  const content = document.getElementById("content");
-
-  content.appendChild(homeHeadline());
-  content.appendChild(homeImg());
-  content.appendChild(homeText());
+function renderMenu() {
+  renderPage(menuHeadline(), menuImg(), menuText());
 }
 
-export { createHomepage };
+export { renderMenu };
