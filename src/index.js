@@ -13,6 +13,7 @@ const switchTab = function (renderCallback) {
   renderCallback();
 };
 
+// event binding
 homeButton.addEventListener("click", () => {
   switchTab(renderHomepage);
 });

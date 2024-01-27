@@ -1,5 +1,5 @@
 import "./style.css";
-import piazzaGalimbertiImg from "./piazza galimberti.jpeg";
+import piazzaGalimbertiImg from "./images/piazza galimberti.jpeg";
 import { renderPage } from "./helper.js";
 
 function menuImg() {
