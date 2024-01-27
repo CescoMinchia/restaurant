@@ -1,3 +1,3 @@
-import { layoutHome } from "./initial-page-load";
+import { createHomepage } from "./initial-page-load";
 
-layoutHome();
+createHomepage();

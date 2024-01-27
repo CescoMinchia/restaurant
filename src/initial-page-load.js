@@ -22,7 +22,7 @@ function homeText() {
   return text;
 }
 
-function layoutHome() {
+function createHomepage() {
   // lay out all the components
   const content = document.getElementById("content");
 
@@ -31,4 +31,4 @@ function layoutHome() {
   content.appendChild(homeText());
 }
 
-export {layoutHome}
+export { createHomepage };
