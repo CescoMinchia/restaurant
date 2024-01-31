@@ -1,5 +1,3 @@
-import "./style.css";
-// import piazzaGalimbertiImg from "./images/piazza galimberti.jpeg";
 import restaurant from "./images/hero-restaurant.jpg";
 import { renderPage } from "./helper.js";
 
@@ -25,7 +23,7 @@ function homeText() {
 }
 
 function renderHomepage() {
-  renderPage(homeHeadline(), homeImg(), homeText());
+  renderPage(homeImg(), homeText());
 }
 
 export { renderHomepage };
