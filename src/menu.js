@@ -15,7 +15,8 @@ function createArticle() {
   div.appendChild(p);
 
   h3.textContent = "A few highlights from our menu";
-  p.textContent = "We cater for all dietary requirements, but here's a glimpse at some of our diner's favourites. Our menu is revamped every season.";
+  p.textContent =
+    "We cater for all dietary requirements, but here's a glimpse at some of our diner's favourites. Our menu is revamped every season.";
 
   return article;
 }
@@ -24,17 +25,23 @@ function createCardsContainer() {
   const cardsContainer = document.createElement("div");
   cardsContainer.classList.add("cardsContainer");
 
-  const card1 = createCard(salmonImg,
+  const card1 = createCard(
+    salmonImg,
     "Seared Salmon Fillet",
-    "Our locally sourced salmon served with a refreshing buckwheat summer salad.");
+    "Our locally sourced salmon served with a refreshing buckwheat summer salad.",
+  );
 
-  const card2 = createCard(beefImg,
+  const card2 = createCard(
+    beefImg,
     "Rosemary Filet Mignon",
-    "Our prime beef served to your taste with a delicious choice of seasonal sides.");
+    "Our prime beef served to your taste with a delicious choice of seasonal sides.",
+  );
 
-  const card3 = createCard(mousseImg,
+  const card3 = createCard(
+    mousseImg,
     "Summer Fruit Chocolate Mousse",
-    "Creamy mousse combined with summer fruits and dark chocolate shavings.");
+    "Creamy mousse combined with summer fruits and dark chocolate shavings.",
+  );
 
   cardsContainer.appendChild(card1);
   cardsContainer.appendChild(card2);
@@ -63,7 +70,7 @@ function createCard(imgUrl, hText, pText) {
 }
 
 function renderMenu() {
-  renderPage(createArticle(),createCardsContainer());
+  renderPage(createArticle(), createCardsContainer());
 }
 
 export { renderMenu };

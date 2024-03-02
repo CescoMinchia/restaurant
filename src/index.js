@@ -1,6 +1,7 @@
 import { renderHomepage } from "./homepage-load.js";
 import { renderMenu } from "./menu.js";
 import { renderAbout } from "./about.js";
+import { renderContact } from "./form.js";
 import { toggleDropdownMenu, closeDropdownMenu } from "./dropdown.js";
 
 import "./style.css";
@@ -11,11 +12,17 @@ import arrowDown from "./icons/arrow_down.svg";
 const homeButton = document.getElementById("homeButton");
 const menuButton = document.getElementById("menuButton");
 const aboutButton = document.getElementById("aboutButton");
+const contactButton = document.getElementById("contactButton");
 const moreButton = document.getElementById("moreButton");
 
-const switchTab = function (renderCallback) {
+const switchTab = function (renderCallback, newClass = null) {
   const mainContainer = document.getElementById("content");
   mainContainer.innerHTML = "";
+
+  if (newClass !== null) {
+    mainContainer.removeAttribute("class");
+    mainContainer.classList.add(newClass);
+  }
 
   renderCallback();
 };
@@ -26,11 +33,16 @@ homeButton.addEventListener("click", () => {
 });
 
 menuButton.addEventListener("click", () => {
-  switchTab(renderMenu);
+  switchTab(renderMenu, "midSection");
 });
 
 aboutButton.addEventListener("click", () => {
-  switchTab(renderAbout);
+  // disable about, as it is empty
+  // switchTab(renderAbout);
+});
+
+contactButton.addEventListener("click", () => {
+  switchTab(renderContact, "formPage");
 });
 
 // dropdown event binding
@@ -49,4 +61,4 @@ document.body.addEventListener("click", (event) => {
   closeDropdownMenu();
 });
 
-renderMenu();
+renderHomepage();

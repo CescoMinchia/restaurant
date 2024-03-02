@@ -1,9 +1,9 @@
-import restaurant from "./images/hero-restaurant.jpg";
+// import restaurant from "./images/hero-restaurant.jpg";
 import { renderPage } from "./helper.js";
 
 function homeImg() {
   const heroImg = document.createElement("img");
-  heroImg.src = restaurant;
+  // heroImg.src = restaurant;
 
   return heroImg;
 }

@@ -1,10 +1,10 @@
 import "./style.css";
-import piazzaGalimbertiImg from "./images/piazza galimberti.jpeg";
+// import piazzaGalimbertiImg from "./images/piazza galimberti.jpeg";
 import { renderPage } from "./helper.js";
 
 function aboutImg() {
   const heroImg = document.createElement("img");
-  heroImg.src = piazzaGalimbertiImg;
+  // heroImg.src = piazzaGalimbertiImg;
 
   return heroImg;
 }

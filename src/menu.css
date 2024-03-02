@@ -26,7 +26,7 @@ button {
     align-items: center;
 }
 
-#content{
+.midSection {
     background-color: #111111;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ button {
     gap: 20px;
 }
 
-#content article{
+.midSection article{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ button {
     /* gap: 100px; */
 }
 
-#content > article > div {
+.midSection > article > div {
     color: white;
     /* position: relative; */
     /* top: 100px; */
@@ -50,49 +50,58 @@ button {
 
 }
 
-#content .cardsContainer {
+.midSection .cardsContainer {
     display: flex;
     flex-direction: column;
     gap: 120px;
 }
 
-#content .card {
+.midSection.card {
     display: flex;
     flex-direction: column;
     gap: 50px;
     color: white;
 }
 
-#content .card > div{
+.midSection .card > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* width:350px; */
 }
 
-#content .card div h4{
+.midsection .card div h4{
     font-family: 'League Spartan';
     font-size:20px;
     font-weight: 600;
     margin-top: 0;
 }
 
-#content .card div p{
+.midSection .card div p{
     font-family: 'League Spartan';
     font-size:16px;
     line-height: 26px;
     /* margin-top: 0; */
 }
 
-#content h3{
+.midSection h3 {
     font-family: 'League Spartan';
+    color:white;
     font-size:48px;
     font-weight: 600;
     line-height: 48px;
 }
 
-#content p{
+.midSection h4 {
     font-family: 'League Spartan';
+    color:white;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.midSection p{
+    font-family: 'League Spartan';
+    color:white;
     font-size:20px;
     line-height: 30px;
 }
