@@ -5,8 +5,7 @@ body {
     padding: 0;
 }
 
-/* .header-homepage { */
-    .wrapper {
+.wrapper {
     background-image: url("./images/menu/hero-bg-desktop2.jpg");
     background-position: 300px;
     background-repeat: no-repeat;
@@ -14,7 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     padding-left:165px;
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: red;;
 }
 
 #title {
