@@ -24,6 +24,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .midSection {
@@ -44,10 +45,6 @@ button {
 
 .midSection > article > div {
     color: white;
-    /* position: relative; */
-    /* top: 100px; */
-    /* width: 445px; */
-
 }
 
 .midSection .cardsContainer {
@@ -67,7 +64,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width:350px; */
 }
 
 .midsection .card div h4{
@@ -81,7 +77,6 @@ button {
     font-family: 'League Spartan';
     font-size:16px;
     line-height: 26px;
-    /* margin-top: 0; */
 }
 
 .midSection h3 {

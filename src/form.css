@@ -1,206 +1,128 @@
-@import url('https://fonts.cdnfonts.com/css/league-spartan');
+@import url("https://fonts.cdnfonts.com/css/league-spartan");
 
 body {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body:has(.formPage) {
-    overflow: hidden; 
-  }
+  overflow: hidden;
+}
 
 .formPage {
-    background-image: url("./images/menu/hero-bg-desktop.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    padding-left:165px;
-    background-color: #111111;
-    overflow: hidden;
-    margin: 0;
+  background-image: url("./images/menu/hero-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  padding-left: 165px;
+  background-color: #111111;
+  overflow: hidden;
+  margin: 0;
 }
 
-/* nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 60px;
-} */
-
-/* nav button {
-    width: 245px;
-    height: 64px;
-    border: 1px solid white;
-    background-color: black;
-    color:white;
-    text-transform: uppercase;
-    font-family: 'League Spartan';
-    font-size:17px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-    align-self: self-start;
-} */ 
-/* .formPage{
-    width:507px;
-    color:white;
-} */
-
-.formPage h1{
-    color: white;
-    font-family: 'League Spartan';
-    margin-top: -150px;
-    /* position: relative; */
-    /* top: -200px; */
-    /* margin-top:153px;1 */
+.formPage h1 {
+  color: white;
+  font-family: "League Spartan";
+  margin-top: -150px;
 }
 
-.formPage h2{
-    color: white;
-    font-family: 'League Spartan';
-    font-size:80px;
-    font-weight:lighter;
-    line-height:80px;
-    margin: 0;
-    /* margin-top:153px;1 */
+.formPage h2 {
+  color: white;
+  font-family: "League Spartan";
+  font-size: 80px;
+  font-weight: lighter;
+  line-height: 80px;
+  margin: 0;
 }
-.formPage p{
-    color: white;
-    font-family: 'League Spartan';
-    font-size:20px;
-    font-weight:normal;
-    width:445px;
-    line-height:30px;
+.formPage p {
+  color: white;
+  font-family: "League Spartan";
+  font-size: 20px;
+  font-weight: normal;
+  width: 445px;
+  line-height: 30px;
 }
-
-/* header button {
-    width: 245px;
-    height: 64px;
-    border: 1px solid white;
-    background-color: black;
-    color:white;
-    text-transform: uppercase;
-    font-family: 'League Spartan';
-    font-size:17px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-} */
 
 form {
-    background-color: white;
-    width:540px;
-    /* height: fit-content; */
-    /* height:390px; */
-    margin:30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 50px 25px 50px;
-    /* padding-top: 10px; */
-    gap: 35px;
-    
+  background-color: white;
+  width: 540px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 50px 25px 50px;
+  gap: 35px;
 }
 
 form input {
-    width: 100%;
+  width: 100%;
 }
 
 form input:invalid {
-    border-color: red;
-  }
+  border-color: red;
+}
 form input:valid {
-    border-color: green;
-  }
+  border-color: green;
+}
 
 .text-line {
-    background-color: transparent;
-    color: black;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #eeeeee 1px;
-    padding: 3px 10px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #eeeeee 1px;
+  padding: 3px 10px;
 }
 
-
-
-input[type='submit'] {
-    width:100%;
-    height: 64px;
-    border: none;
-    background-color: black;
-    color:white;
-    text-transform: uppercase;
-    font-family: 'League Spartan';
-    font-size:17px;
-    font-weight: 600;
-    letter-spacing: 3px;
+input[type="submit"] {
+  width: 100%;
+  height: 64px;
+  border: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "League Spartan";
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
-
 
 .error {
-    width: 100%;
-    padding: 0;
-  
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-  
-    box-sizing: border-box;
-    margin-bottom:40px;
-  }
-  
-  .error.active {
-    padding: 0.3em;
-  }
+  width: 100%;
+  padding: 0;
 
-  /* Dropdown Content (Hidden by Default) */
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1b313b;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    color: black;
-    background-color: #e9c46a;
-    border-radius: inherit;
-  }
-  
-  .dropdown-content a:active {
-    color: black;
-    background-color: #cfae5e;
-    border-radius: inherit;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {
-    display: block;
-  }
-  
+  display: none;
+  position: absolute;
+  background-color: #1b313b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}

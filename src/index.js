@@ -1,10 +1,8 @@
 import { renderHomepage } from "./homepage-load.js";
 import { renderMenu } from "./menu.js";
-import { renderAbout } from "./about.js";
 import { renderContact } from "./form.js";
 import { toggleDropdownMenu, closeDropdownMenu } from "./dropdown.js";
 
-import "./style.css";
 import "./dropdown-style.css";
 
 import arrowDown from "./icons/arrow_down.svg";

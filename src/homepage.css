@@ -1,0 +1,244 @@
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+/* .header-homepage { */
+    .wrapper {
+    background-image: url("./images/menu/hero-bg-desktop2.jpg");
+    background-position: 300px;
+    background-repeat: no-repeat;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    padding-left:165px;
+    background-color: #111111;
+}
+
+#title {
+    margin-top:65px;
+}
+
+#hero-text {
+    /* height:fit-content; */
+    width:507px;
+    color:white;
+}
+
+#hero-text h2{
+    font-family: 'League Spartan';
+    font-size:80px;
+    font-weight:lighter;
+    line-height:80px;
+    margin: 0;
+    margin-top:153px;
+}
+#hero-text p{
+    font-family: 'League Spartan';
+    font-size:20px;
+    font-weight:normal;
+    width:445px;
+    line-height:30px;
+}
+
+.header-homepage  button {
+    width: 245px;
+    height: 64px;
+    border: 1px solid white;
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'League Spartan';
+    font-size:17px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upperSection {
+    height: 1411px;
+    display: flex;
+    flex-direction: column;
+    gap:200px;
+}
+
+
+#upperSection article {
+    background-color: white;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:120px;
+}
+
+
+#upperSection :nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#upperSection div {
+    position: relative;
+    top: 100px;
+    width: 445px;
+}
+
+#upperSection h3{
+    font-family: 'League Spartan';
+    font-size:48px;
+    font-weight: 600;
+    line-height: 48px;
+}
+#upperSection p{
+    font-family: 'League Spartan';
+    font-size:20px;
+    line-height: 30px;
+}
+
+#upperSection img{
+    width: 540px;
+    height: 720px;
+    margin: -70px 0;
+}
+
+
+
+
+#midSection{
+    background-color: #111111;
+    padding: 165px;
+}
+
+#midSection article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#midSection > article > div {
+    color: white;
+    position: relative;
+}
+
+#midSection .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#midSection .card {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#midSection .card > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#midSection .card div h4{
+    font-family: 'League Spartan';
+    font-size:20px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#midSection .card div p{
+    font-family: 'League Spartan';
+    font-size:16px;
+    line-height: 26px;
+    margin-top: 0;
+}
+
+#midSection .card img{
+    width: 160px;
+    height: 96px;
+}
+
+
+
+#midSection h3{
+    font-family: 'League Spartan';
+    font-size:48px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+#midSection p{
+    font-family: 'League Spartan';
+    font-size:20px;
+    line-height: 30px;
+}
+
+#lowerSection {
+    background-color: white;
+    height: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowerSection-container {
+    width: 1110px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 70px;
+
+}
+
+.lowerSection-container article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:445px;
+    height:280px;
+    position: relative;
+    top: 70px;
+    gap: 20px;
+}
+
+.lowerSection-container article h3 {
+    font-family: 'League Spartan';
+    font-size:48px;
+    font-weight: 600;
+    line-height: 48px;   
+    margin:0;
+}
+
+.lowerSection-container article p {
+    font-family: 'League Spartan';
+    font-size:20px;
+    line-height: 30px;
+    margin:0;
+}
+
+.lowerSection-container article button {
+    width: 245px;
+    height: 64px;
+    border: 1px solid white;
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'League Spartan';
+    font-size:17px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    align-self: self-start;
+}
+
+footer {
+    background-color: yellow;
+    height: 480px;
+}

@@ -1,12 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1b313b;
+  background-color: black;
+  border: 1px solid white;
+  font-family: 'League Spartan';
+  color:white;
+  font-weight: 600;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 1px !important;
 }
 
 /* Links inside the dropdown */
@@ -21,7 +27,7 @@
 .dropdown-content a:hover {
   color: black;
   background-color: #e9c46a;
-  border-radius: inherit;
+  /* border-radius: inherit; */
 }
 
 .dropdown-content a:active {
